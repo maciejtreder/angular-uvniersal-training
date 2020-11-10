@@ -1,0 +1,20 @@
+<ng-container *ngIf="product$ | async as p">
+    <div class="card mb-4 shadow-sm">
+        <div class="bd-placeholder-img card-img-top">
+            <img src="assets/images/{{p.image}}.png" alt="pictogram of {{p.name}}" />
+        </div>
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+                <h4 class="mb-3">{{p.name}}</h4>
+                <small class="text-muted">{{p.price | currency}}</small>
+            </div>
+            <p *ngIf="p.description" class="card-text">{{p.description}}</p>
+            <div class="btn-group">
+                <a *ngIf="!p.description" [routerLink]="['/product', p.id]"
+                    class="btn btn-sm btn-outline-secondary">{{p.name}} description</a>
+                <button *ngIf="!isFavorite" (click)="addToFavorites(p.id)" class="btn btn-sm btn-outline-primary">add to
+                    favorites</button>
+            </div>
+        </div>
+    </div>
+</ng-container>
