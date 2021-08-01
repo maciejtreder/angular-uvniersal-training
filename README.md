@@ -1,6 +1,6 @@
 # Angular Universal - techniques
 
-This application is part of the Guide to the Angular Universal course available on newline.co
+This application is part of the Guide to the [Angular Universal course available on newline.co](https://www.newline.co/courses/newline-guide-to-angular-universal)
 
 # Prerequisites
 
