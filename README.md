@@ -47,6 +47,11 @@ mongoimport --uri mongodb+srv://<username>:<password>@<hostname>/<database_name>
 --collection users --file db/users.json
 ```
 
+ie:
+```
+mongoimport --uri mongodb+srv://username:password@cluster0.1gerr.mongodb.net/myFirstDatabase --collection products --file db/products.json
+```
+
 ## Connect application with MongoDB
 Edit the `api.ts` file to point to your MongoDB:
 
