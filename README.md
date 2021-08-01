@@ -49,7 +49,8 @@ mongoimport --uri mongodb+srv://<username>:<password>@<hostname>/<database_name>
 
 ie:
 ```
-mongoimport --uri mongodb+srv://username:password@cluster0.1gerr.mongodb.net/myFirstDatabase --collection products --file db/products.json
+mongoimport --uri mongodb+srv://username:password@cluster0.1gerr.mongodb.net/myFirstDatabase \
+--collection products --file db/products.json
 ```
 
 ## Connect application with MongoDB
@@ -57,10 +58,10 @@ Edit the `api.ts` file to point to your MongoDB:
 
 ```
 const dbUrl =
-  'mongodb+srv://<username>:<password>@cluster0.1gerr.mongodb.net/cluster0';
+  'mongodb+srv://<username>:<password>@cluster0.1gerr.mongodb.net/myFirstDatabase';
 const dbClient = MongoClient.connect(dbUrl, {
   useUnifiedTopology: true,
-}).then((connection) => connection.db('cluster0'));
+}).then((connection) => connection.db('myFirstDatabase'));
 ```
 
 ## Final check
