@@ -6,6 +6,7 @@ This application is part of the Guide to the Angular Universal course available 
 
 To make this applicatin up and running you need to install the followings on your local machine:
 
+- [GIT](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [Node.js & NPM](https://nodejs.org/en/)
 - [Redis server](https://redis.io)
 
