@@ -25,7 +25,7 @@ Apart of that you need to have a [Free MongoDB Cloud account](https://cloud.mong
 
 Once you're done with installation of the prerequisites you need to set up MongoDB and adjust your project.
 
-1. Navigate to (https://cloud.mongodb.com/user)[https://cloud.mongodb.com/user] and sign in to your account
+1. Navigate to https://cloud.mongodb.com/user and sign in to your account
 1. Create a new clustiner in region that is closes to you: ![img](https://raw.githubusercontent.com/maciejtreder/angular-uvniersal-training/master/atlas2.jpg)
 
 1. When your cluster is ready, click the Connect button and follow the prompts in the Connect to Cluster panel to:
